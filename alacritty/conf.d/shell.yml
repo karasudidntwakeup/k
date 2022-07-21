@@ -1,0 +1,4 @@
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - --login
