@@ -1,0 +1,10 @@
+syntax on 
+set ignorecase
+set history=1000
+set encoding=utf-8
+set undofile 
+set bg=light
+set incsearch
+set number 
+set hlsearch
+set relativenumber
