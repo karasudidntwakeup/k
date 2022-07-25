@@ -65,7 +65,7 @@ static const char unknown_str[] = "0";
  */
 static const struct arg args[] = {
 	{ keymap, "^c#9688e2^ %s ", NULL  },
-        { run_command, "^c#C0FFF4^  墳 %s%% ", "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },
+        { run_command, "^c#C0FFF4^  墳 %s ","pactl list sinks | tr ' ' '\n' | grep -m1 '%'"},
         { ram_used, "^c#ffc0cb^  %s ", NULL },
         { netspeed_rx, "^c#fab387^ %sB/s 直 ", "wlp7s0"},
 	{ battery_perc, "^c#9688e2^    %s%%","BAT0" },
